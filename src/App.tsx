@@ -1,11 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-
-function App() {
+import React, { Fragment } from 'react';
+import Header from './components/Layout/Header';
+const App:React.FC = () => {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <Fragment>
+      <Header/>
+    </Fragment>
   );
 }
 
