@@ -1,9 +1,13 @@
 import React, { Fragment } from 'react';
 import Header from './components/Layout/Header';
-const App:React.FC = () => {
+import Meals from './components/Meals/Meals';
+const App: React.FC = () => {
   return (
     <Fragment>
-      <Header/>
+      <Header />
+      <main>
+        <Meals />
+      </main>
     </Fragment>
   );
 }
