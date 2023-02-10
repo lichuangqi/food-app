@@ -1,4 +1,5 @@
 import React from 'react';
+import MealItemForm from './MealItemForm';
 import classes from './MealItem.module.css';
 interface Props {
     name: string,
@@ -15,7 +16,7 @@ const MealItem: React.FC<Props> = ({ name, description, price }) => {
                 <div className={classes.price}>{fee}</div>
             </div>
             <div>
-
+                <MealItemForm />
             </div>
         </li>
     )
