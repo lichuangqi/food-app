@@ -4,13 +4,13 @@ type Props = {
     label: string,
     input: any
 }
-const Input: React.FC<Props> = ({ label, input }) => {
+const Input = React.forwardRef<HTMLInputElement,Props>(({ label, input }, ref) => {
     return (
         <div className={classes.input}>
             <label htmlFor="">{label}</label>
-            <input {...input} />
+            <input ref={ref} {...input} />
         </div>
     )
-}
+})
 
 export default Input;
